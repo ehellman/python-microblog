@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h1>Hello {{ user.nickname }}</h1>
+
+  {% for post in posts %}
+    <div>
+      <img src="{{ post.author.avatar }}" class="avatar" />
+      <p class="comment">
+        {{ post.author.nickname }} says: <b>{{ post.body }}</b>
+      </p>
+    </div>
+  {% endfor %}
+
+{% endblock %}
