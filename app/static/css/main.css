@@ -5,3 +5,6 @@
 .comment{
   display: inline;
 }
+.text-alert{
+  color: red;
+}
